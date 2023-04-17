@@ -83,7 +83,7 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 
 prediction = model.predict(input_data_reshaped)
 print(prediction)
-if st.button("Predict")
+if st.button("Predict"):
     if (prediction[0]== 0):
         st.write('The Person does not have a Covid')
     else:
